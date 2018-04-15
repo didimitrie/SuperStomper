@@ -1,5 +1,15 @@
-# SuperStomper
+# 👢👞 👠 SuperStomper
 An **ungraceful** (hence the name) approach to Rhino as a Server and Gh Cloud/Async/Generic Components, done as a weekend project.
+
+A bit of history: almost two years ago, i had a crack at making some "cloud components" for grasshopper: [check this video  out!](https://www.youtube.com/watch?v=tT-wYlM0Aqg):
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/tT-wYlM0Aqg/0.jpg)](https://www.youtube.com/watch?v=tT-wYlM0Aqg "Video Title")
+
+That was a rather simplistic way of defining tasks on a nodejs server, and having gh components invoke those tasks and getting the results out.
+
+Then rhino compute came out - and I said, dude this has to be done. The adventure follows:
+
+## 👢 Intro
 
 The Rhino Server (Super Stomper) essentially exposes all `Rhino.Geometry` methods from RhinoCommon.dll as REST api endpoints. It reflects on them when the server is first run, creates a simple abstraction layer, and then presents them in quasi readable format.
 
@@ -13,7 +23,7 @@ To get a method, simply `GET  /methods/{methodId}`, where methodId is a number (
 
 The Gh components located in the [cloud compute folder](https://github.com/didimitrie/SuperStomper/tree/master/CloudCompute/CloudCompute) help you call those methods. See below for more info.
 
-## Why did you bother? 
+## 👞 Why did you bother? 
 
 I wanted to put my money where my mouth is, and have some fun before annoying people from mcneel. Some takeaways:
 
@@ -30,15 +40,15 @@ Well right now you're bound to one server per rhino running at one port. Test th
 
 #### 4. the gh components
 
-Takeaway 1:
+**Takeaway 1:**
 
 The gh components essentially all reflect on a method and morph into a visual aide to help you call that method via gh's lovely ui. So no more coding of SolveInstance and stuff, you just write nice methods that later get transformed into compoents. They don't need to be static, it's easy to invoke non-static ones! 
 
-Takeaway 1.1: 
+**Takeaway 1.1:**
 
 This can would allow for a node-to-code approach. *All components are just methods called in a specific order.*
 
-Takeaway 1.2:  
+**Takeaway 1.2:**
 
 If you codifiy the above nicely, you can run globs of functions on a server. That would allow for totally rad things:
 - a continous build & test piepline for design 
@@ -46,11 +56,11 @@ If you codifiy the above nicely, you can run globs of functions on a server. Tha
 - tests can be defined by anyone with some experience of visual programming
 - tests can be run locally for cool dudes, but also remotely - ie structural engineer defining a test for architect / costing for design  / etc. 
 
-Takeaway 2:
+**Takeaway 2:**
 
 You can defs do async stuff, without blocking the ui thread, with the component approach above. 
 
-## The Rhino Server
+## 👠The Rhino Server
 
 > A test version is online at [stomper.speckle.works](https://stomper.speckle.works).
 
@@ -70,7 +80,7 @@ To see it in action point your browser to [localhost:1337](http://localhost:1337
 
 Ok, great, now how do I get to invoke these methods? Onwards:
 
-## The Grasshopper Componets
+## 👞 The Grasshopper Componets
 
 There's several components (four in total) that do different things and push different agendas. There's only one that works with the server. In reverse order of (geek) coolness: 
 
@@ -98,6 +108,8 @@ Some fun methods that actually work nicely with gh:
 
 To get what's going on, install [fiddler](https://www.telerik.com/fiddler) and inspect the traffic. You'll be able to grok easier the behind the scenes. 
 
+[Here's a video of the things in action](https://www.youtube.com/watch?v=Mc2bpzOUaFs). 
+
 ### The Curious Computer Component  & Curios Computer Async
 
 This guy is actually a stab at grasshopper's rather clunky way of dealing with components. Discussed a lot @luisfraguada what this can mean for the future, plenty of ideas, no time.
@@ -110,5 +122,7 @@ This one just invokes stuff from `SolveInstance`, thus bloking the ui thread on 
 #### The Async Component
 This one debounces the invokation to one every 200ms, and does it outside the main thread. Because we're missing gh's native data collection capabilities, it can't really do data matching (it does a cartesian set if lists are inputted where an item is expected).
 
-That's it. I'm done for the weekend. No more fun coding :( 
+That's it for now.  
+
+🙇🏽❤️🤞
 
