@@ -60,6 +60,8 @@ If you codifiy the above nicely, you can run globs of functions on a server. Tha
 
 You can defs do async stuff, without blocking the ui thread, with the component approach above. 
 
+Credits: The above takeaways were brainstormed over speckle slacks with [@fraguada](https://github.com/fraguada)!
+
 ## 👠The Rhino Server
 
 > A test version is online at [stomper.speckle.works](https://stomper.speckle.works).
