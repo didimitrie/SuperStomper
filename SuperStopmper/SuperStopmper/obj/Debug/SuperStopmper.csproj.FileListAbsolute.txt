@@ -1,0 +1,13 @@
+c:\users\dim\documents\visual studio 2017\Projects\SuperStopmper\SuperStopmper\bin\SuperStopmper.dll
+c:\users\dim\documents\visual studio 2017\Projects\SuperStopmper\SuperStopmper\bin\SuperStopmper.pdb
+c:\users\dim\documents\visual studio 2017\Projects\SuperStopmper\SuperStopmper\bin\Nancy.dll
+c:\users\dim\documents\visual studio 2017\Projects\SuperStopmper\SuperStopmper\bin\Nancy.Hosting.Self.dll
+c:\users\dim\documents\visual studio 2017\Projects\SuperStopmper\SuperStopmper\bin\Newtonsoft.Json.dll
+c:\users\dim\documents\visual studio 2017\Projects\SuperStopmper\SuperStopmper\bin\Nancy.xml
+c:\users\dim\documents\visual studio 2017\Projects\SuperStopmper\SuperStopmper\bin\Nancy.Hosting.Self.xml
+c:\users\dim\documents\visual studio 2017\Projects\SuperStopmper\SuperStopmper\bin\Newtonsoft.Json.xml
+c:\users\dim\documents\visual studio 2017\Projects\SuperStopmper\SuperStopmper\obj\Debug\SuperStopmper.csprojResolveAssemblyReference.cache
+c:\users\dim\documents\visual studio 2017\Projects\SuperStopmper\SuperStopmper\obj\Debug\SuperStopmper.csproj.CoreCompileInputs.cache
+c:\users\dim\documents\visual studio 2017\Projects\SuperStopmper\SuperStopmper\obj\Debug\SuperStopmper.dll
+c:\users\dim\documents\visual studio 2017\Projects\SuperStopmper\SuperStopmper\obj\Debug\SuperStopmper.pdb
+C:\Users\Dim\documents\visual studio 2017\Projects\SuperStopmper\SuperStopmper\bin\Nancy.Gzip.dll
